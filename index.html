@@ -1,0 +1,38 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <!-- Meta Tags -->
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Font Awesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <h1>Find your film</h1>
+            <a href="./watchlist.html" class="watchlist">My Watchlist</a>
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass" style="color: #9ca3af;"></i>
+                <input type="text" id="search-input" placeholder="search for a movie" />
+                <button id="search-btn">Search</button>
+            </div>
+        </header>
+        <!-- Main -->
+        <main>
+            <div class="when-main-empty">
+                <div>
+                    <img src="./img/Icon.png" alt="icon" />
+                    <h2>Start exploring</h2>
+                </div>
+            </div>
+            
+            <div id="movie-cards"></div>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
